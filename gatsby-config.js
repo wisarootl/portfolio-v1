@@ -1,5 +1,5 @@
 // change url
-const siteUrl = process.env.URL || `https://wisarootl.github.io/portfolio`
+const siteUrl = process.env.URL || `https://wisarootl.github.io/portfolio-v1`
 const current_date = new Date()
 
 module.exports = {
@@ -42,5 +42,5 @@ module.exports = {
     }
   ],
   // "change url"
-  pathPrefix: `/portfolio`
+  pathPrefix: `/portfolio-v1`
 }

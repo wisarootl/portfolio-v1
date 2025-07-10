@@ -1,6 +1,6 @@
 {
   "_comment_for_homepage": "change url --> search for 'change url'",
-  "homepage": "https://wisarootl.github.io/portfolio",
+  "homepage": "https://wisarootl.github.io/portfolio-v1",
   "name": "folio-gatsby",
   "description": "Folio Gatsby with Bootstrap 4, Styled Components, Slick Carousel, React Icons, React Headroom, etc",
   "version": "1.0.0",
@@ -52,13 +52,15 @@
   "scripts": {
     "dev": "yarn develop",
     "_start": "yarn develop",
-    "build": "gatsby clean && gatsby build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider gatsby clean && NODE_OPTIONS=--openssl-legacy-provider gatsby build",
     "clean": "gatsby clean",
     "develop": "NODE_OPTIONS=--openssl-legacy-provider gatsby develop",
     "start": "gatsby serve",
+    "start:prefix": "gatsby serve --prefix-paths",
+    "serve-public": "npx serve public -p 8080",
     "_serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "predeploy": "yarn build --prefix-paths",
+    "predeploy": "NODE_OPTIONS=--openssl-legacy-provider gatsby clean && NODE_OPTIONS=--openssl-legacy-provider gatsby build --prefix-paths",
     "deploy": "gh-pages -d public"
   },
   "devDependencies": {
