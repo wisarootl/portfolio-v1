@@ -39,6 +39,7 @@
     "react-select": "^3.1.0",
     "react-slick": "^0.25.2",
     "sass": "^1.29.0",
+    "sharp": "^0.34.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.4.1",
     "styled-system": "^5.1.5"
@@ -53,7 +54,7 @@
     "_start": "yarn develop",
     "build": "gatsby clean && gatsby build",
     "clean": "gatsby clean",
-    "develop": "gatsby develop",
+    "develop": "NODE_OPTIONS=--openssl-legacy-provider gatsby develop",
     "start": "gatsby serve",
     "_serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
